@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <title>Code Quiz</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container" id="">
+            <h4><a class="navbar-brand" id="" href="#">View High Scores</a></h4>
+            <h4 class="navbar-brand" id="timer">Timer:</h4>
+
+        </div>
+    </nav>
+    <div class="container p-2">
+        <h1 class="" >Coding Quiz Challenge</h1>
+        <h4>Try to answer the following code-related questions within the alotted time. But be careful, 10 seconds will be deducted each time you answer a question incorrectly. Good luck!</h4>
+        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target=".bd-example-modal-xl">Start Quiz</button>
+    </div>
+    
+
+<div class="modal bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content p-4 m-4">
+        <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLongTitle">Question Text Here</h3>
+            <hr>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <button type="button" class="btn btn-info btn-lg btn-block">A.</button>
+        <button type="button" class="btn btn-info btn-lg btn-block">B.</button>
+        <button type="button" class="btn btn-info btn-lg btn-block">C.</button>
+        <button type="button" class="btn btn-info btn-lg btn-block">D.</button>
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-outline-secondary">Submit</button>
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+            
+          </div>
+    </div>
+  </div>
+</div>
+    
+    
+
+
+    <label for="initials">Enter Initials Here:</label>
+    <input type="text" id="initials" placeholder="ABC">
+    <button>Go Back</button>
+    <button>Clear High Scores</button> -->
+
+    <script src="js/questions.js"></script>
+</body>
+
+</html>
