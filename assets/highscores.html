@@ -15,23 +15,18 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container" id="">
-            <h4><a class="navbar-brand" id="" href="#">View High Scores</a></h4>
-            <h4 class="navbar-brand" id="timer">Timer:</h4>
+          <h4><a class="navbar-brand" id="" href="assets/highscores.html">View High Scores</a></h4>
+          <h4 class="navbar-brand" id="timer"></h4>
 
         </div>
     </nav>
-    
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal">
-    Launch demo modal
-  </button>
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="save-score" tabindex="-1" role="dialog" aria-labelledby="saveScoreLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Save your score.</h5>
+          <h5 class="modal-title" id="saveScoreLabel">Save your score.</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -42,15 +37,27 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary" id="save-changes">Save changes</button>
         </div>
       </div>
     </div>
   </div>
 
-
-
- <button>Clear High Scores</button>
+<div class="scores-list " id="high-scores-list">
+  <h3>High Scores</h3>
+  <div class="row">
+    <div class="col">
+      <h5>Player</h5>
+      <p class="player-initials" id="p-initials"></p>
+    </div>
+    <div class="col">
+      <h5>Score</h5>
+      <p class="player-scores" id="p-scores"></p>
+    </div>
+  </div>
+  <button class="clear-button" id="clear-scores">Clear High Scores</button>
+</div>
+ 
 
   <!-- footer -->
 <footer class="footer">

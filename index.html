@@ -8,56 +8,63 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
+
     <title>Code Quiz</title>
 </head>
 
 <body>
+    <!-- nav bar with high scores link and timer with countdown  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container" id="">
+        <div class="container" id="nav-bar">
             <h4><a class="navbar-brand" id="" href="assets/highscores.html">View High Scores</a></h4>
-            <h4 class="navbar-brand" id="timer">Timer:</h4>
-
+            <h4 class="navbar-brand" id="timer"></h4>
         </div>
     </nav>
-    <div class="modal bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-          <div class="modal-content p-4 m-4">
-              <div class="modal-header">
-                  <h3 class="modal-title" id="exampleModalLongTitle">Coding Quiz Challenge</h3>
-                  <hr>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-        <h1 class="quiz-title" >CODE TIME</h1>
-        <h5>Try to answer the following code-related questions within the alotted time. But be careful, 10 seconds will be deducted each time you answer a question incorrectly. Good luck!</h5>
-        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target=".bd-example-modal-xl">Start Quiz</button>
-    </div>
-    <div class="modal-footer">
-        <button type="submit" class="btn btn-outline-secondary">Submit</button>
-        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-    </div>
-</div>
-</div>
-</div>
 
-<div class="container">
-    <h3 class="modal-title" id="exampleModalLongTitle">Question Text Here</h3>
-    <hr>
-    <button id="" type="button" class="btn btn-info btn-lg btn-block">A.</button>
-    <button id="" type="button" class="btn btn-info btn-lg btn-block">B.</button>
-    <button id="" type="button" class="btn btn-info btn-lg btn-block">C.</button>
-    <button id="" type="button" class="btn btn-info btn-lg btn-block">D.</button>
-    <button id="" type="submit" class="btn btn-outline-secondary">Submit</button>
-</div>
+    <!-- container with main content  -->
+    <div class="main">
 
- <!-- footer -->
-<footer class="footer">
-    <div class="container">
-        <span class="text-muted">Copyright © 2020 Andrea Rumbaua</span>
+        <!-- start quiz page -->
+        <div class="container-start rounded p-3 m-5 border border-secondary" id="start-display">
+            <h1 class="start-title" id="start-header">Quick Code!</h1>
+            <hr>
+            <p class="text-center">Try to answer the following code-related questions within the allotted time. But be careful, 10 seconds will be deducted each time you answer a question incorrectly.</p>
+            <p class="text-center">Good luck!</p>
+            <hr>
+            <button type="button" class="btn btn-outline-info btn-lg btn-block" id="start-button" value="click" onclick="startQuiz();">Start Quiz</button>
+        </div>
     </div>
-</footer>
+
+    <!-- container with quiz questions  -->
+    <div class="container rounded border border-secondary mb-6" id="quiz-area">
+        <h3 class="quiz-title p-3" id="question-display"></h3>
+        <hr>
+        <div class="row">
+            <div class="col" id="options-group">
+                <button id="option-A" type="button" class="btn btn-info btn-lg btn-block">A.</button>
+                <button id="option-B" type="button" class="btn btn-info btn-lg btn-block">B.</button>
+            </div>
+            <div class="col">
+                <button id="option-C" type="button" class="btn btn-info btn-lg btn-block">C.</button>
+                <button id="option-D" type="button" class="btn btn-info btn-lg btn-block">D.</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <hr>
+                <p class="display-cor-incor m-4" id="display-RorW"></p>
+                <hr>
+                <button id="option-submit" type="submit" class="btn btn-outline-secondary btn-block mb-2">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <span class="text-muted">Copyright © 2020 Andrea Rumbaua</span>
+        </div>
+    </footer>
 
     <script src="assets/js/questions.js"></script>
     <script src="assets/js/index.js"></script>
