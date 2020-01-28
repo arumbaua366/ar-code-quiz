@@ -1,27 +1,52 @@
 var questions = [
     {
-      title: 'Commonly used data types do not include _____.',
-      choices: ['alerts', 'strings', 'booleans', 'numbers'],
-      answer: 'alerts'
+      title: 'What color are zebras?',
+      choices: [
+          'White with black stripes.', 
+          'Black with white stripes.', 
+          'Both of the above.', 
+          'None of the above.'
+        ],
+      answer: 'B'
     },
     {
-      title: 'Which indicates an increment operator?',
-      choices: ['===', '--', '++', '&&'],
-      answer: '++'
+      title: 'What is the fastest water animal?',
+      choices: [
+          'sailfish', 
+          'porpoise', 
+          'flying fish', 
+          'tuna'
+        ],
+      answer: 'A'
     },
     {
-      title: 'The contents of a string is encolsed within _____.',
-      choices: ['curly brackets', 'quotes', 'parentheses', 'forward slashes'],
-      answer: 'quotes'
+      title: 'What type of animal is a seahorse?',
+      choices: [
+          'arachnid', 
+          'fish', 
+          'crustacean', 
+          'shell'
+        ],
+      answer: 'C'
     },
     {
-      title: 'Objects store _____.',
-      choices: ['flex boxes', 'methods', 'properties', 'B and C'],
-      answer: 'B and C'
+      title: 'What is the biggest animal that has ever lived?',
+      choices: [
+          'african elephant', 
+          'spinosaurus', 
+          'brontosaurus', 
+          'blue whale'
+        ],
+      answer: 'D'
     },
     {
-      title: 'What does DOM stand for?',
-      choices: ['Document Object Model', 'Document Objective Mode', 'Document Oriented Modal', 'Development Order Module'],
-      answer: 'Document Object Model'
+      title: 'What are female elephants called?',
+      choices: [
+          'cows', 
+          'sows', 
+          'mares', 
+          'dams'
+        ],
+      answer: 'A'
     },
   ];

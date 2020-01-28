@@ -21,6 +21,11 @@ html {
     margin-top: 5rem;
 }
 
+#display-RorW {
+    text-align: center;
+    font-weight: bold;
+}
+
 #quiz-area {
     display: none;
 }

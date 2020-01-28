@@ -39,14 +39,14 @@
     <div class="container rounded border border-secondary mb-6" id="quiz-area">
         <h3 class="quiz-title p-3" id="question-display"></h3>
         <hr>
-        <div class="row">
+        <div class="row options-group">
             <div class="col" id="options-group">
-                <button id="option-A" type="button" class="btn btn-info btn-lg btn-block">A.</button>
-                <button id="option-B" type="button" class="btn btn-info btn-lg btn-block">B.</button>
+                <button id="option-A" type="button" class="button-options btn btn-info btn-lg btn-block" onclick="choiceCheck('A')"></button>
+                <button id="option-B" type="button" class="button-options btn btn-info btn-lg btn-block" onclick="choiceCheck('B')"></button>
             </div>
-            <div class="col">
-                <button id="option-C" type="button" class="btn btn-info btn-lg btn-block">C.</button>
-                <button id="option-D" type="button" class="btn btn-info btn-lg btn-block">D.</button>
+            <div class="col" id="options-group">
+                <button id="option-C" type="button" class="button-options btn btn-info btn-lg btn-block" onclick="choiceCheck('C')"></button>
+                <button id="option-D" type="button" class="button-options btn btn-info btn-lg btn-block" onclick="choiceCheck('D')"></button>
             </div>
         </div>
         <div class="row">
@@ -54,7 +54,7 @@
                 <hr>
                 <p class="display-cor-incor m-4" id="display-RorW"></p>
                 <hr>
-                <button id="option-submit" type="submit" class="btn btn-outline-secondary btn-block mb-2">Submit</button>
+                <button id="option-submit" type="submit" class="btn btn-outline-secondary btn-block mb-2" onclick="" >Submit</button>
             </div>
         </div>
     </div>
