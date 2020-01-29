@@ -2,51 +2,51 @@ var questions = [
     {
       title: 'What color are zebras?',
       choices: [
-          'White with black stripes.', 
-          'Black with white stripes.', 
-          'Both of the above.', 
+          'White with black stripes.',
+          'Black with white stripes.',
+          'Both of the above.',
           'None of the above.'
         ],
-      answer: 'B'
+      answer: 1
     },
     {
       title: 'What is the fastest water animal?',
       choices: [
-          'sailfish', 
-          'porpoise', 
-          'flying fish', 
+          'sailfish',
+          'porpoise',
+          'flying fish',
           'tuna'
         ],
-      answer: 'A'
+      answer: 0
     },
     {
       title: 'What type of animal is a seahorse?',
       choices: [
-          'arachnid', 
-          'fish', 
-          'crustacean', 
+          'arachnid',
+          'fish',
+          'crustacean',
           'shell'
         ],
-      answer: 'C'
+      answer: 2
     },
     {
       title: 'What is the biggest animal that has ever lived?',
       choices: [
-          'african elephant', 
-          'spinosaurus', 
-          'brontosaurus', 
+          'african elephant',
+          'spinosaurus',
+          'brontosaurus',
           'blue whale'
         ],
-      answer: 'D'
+      answer: 3
     },
     {
       title: 'What are female elephants called?',
       choices: [
-          'cows', 
-          'sows', 
-          'mares', 
+          'cows',
+          'sows',
+          'mares',
           'dams'
         ],
-      answer: 'A'
+      answer: 0
     },
   ];

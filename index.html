@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+​
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+​
     <title>Code Quiz</title>
 </head>
-
+​
 <body>
     <!-- nav bar with high scores link and timer with countdown  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -20,10 +20,10 @@
             <h4 class="navbar-brand" id="timer"></h4>
         </div>
     </nav>
-
+​
     <!-- container with main content  -->
     <div class="main">
-
+​
         <!-- start quiz page -->
         <div class="container-start rounded p-3 m-5 border border-secondary" id="start-display">
             <h1 class="start-title" id="start-header">Quick Code!</h1>
@@ -34,38 +34,23 @@
             <button type="button" class="btn btn-outline-info btn-lg btn-block" id="start-button" value="click" onclick="startQuiz();">Start Quiz</button>
         </div>
     </div>
-
+​
     <!-- container with quiz questions  -->
     <div class="container rounded border border-secondary mb-6" id="quiz-area">
         <h3 class="quiz-title p-3" id="question-display"></h3>
         <hr>
-        <div class="row options-group">
-            <div class="col" id="options-group">
-                <button id="option-A" type="button" class="button-options btn btn-info btn-lg btn-block" onclick="choiceCheck('A')"></button>
-                <button id="option-B" type="button" class="button-options btn btn-info btn-lg btn-block" onclick="choiceCheck('B')"></button>
-            </div>
-            <div class="col" id="options-group">
-                <button id="option-C" type="button" class="button-options btn btn-info btn-lg btn-block" onclick="choiceCheck('C')"></button>
-                <button id="option-D" type="button" class="button-options btn btn-info btn-lg btn-block" onclick="choiceCheck('D')"></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <hr>
-                <p class="display-cor-incor m-4" id="display-RorW"></p>
-                <hr>
-                <button id="option-submit" type="submit" class="btn btn-outline-secondary btn-block mb-2" onclick="" >Submit</button>
-            </div>
+        <div class="row" id="options-group">
+​
         </div>
     </div>
-
+​
     <!-- footer -->
     <footer class="footer mt-5">
         <div class="container">
             <span class="text-muted">Copyright © 2020 Andrea Rumbaua</span>
         </div>
     </footer>
-
+​
     <script src="assets/js/questions.js"></script>
     <script src="assets/js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -78,5 +63,5 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 </body>
-
+​
 </html>
