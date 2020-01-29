@@ -27,6 +27,11 @@ html {
     font-style: italic;
 }
 
+#ques-btns {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 #quiz-area {
     display: none;
 }

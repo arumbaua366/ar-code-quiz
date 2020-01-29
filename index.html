@@ -13,17 +13,19 @@
 </head>
 ​
 <body>
+   
     <!-- nav bar with high scores link and timer with countdown  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container" id="nav-bar">
             <h4><a class="navbar-brand" id="" href="assets/highscores.html">View High Scores</a></h4>
+            <h4 class="navbar-brand"><a href="index.html" id="restart-quiz">Restart Quiz</a></h4>
             <h4 class="navbar-brand" id="timer"></h4>
         </div>
     </nav>
-​
+​   
     <!-- container with main content  -->
     <div class="main">
-​
+​   
         <!-- start quiz page -->
         <div class="container-start rounded p-3 m-5 border border-secondary" id="start-display">
             <h1 class="start-title" id="start-header">Quick Code!</h1>
@@ -32,9 +34,9 @@
             <p class="text-center">Good luck!</p>
             <hr>
             <button type="button" class="btn btn-outline-info btn-lg btn-block" id="start-button" value="click" onclick="startQuiz();">Start Quiz</button>
-        </div>
+       </div>
     </div>
-​
+​   
     <!-- container with quiz questions  -->
     <div class="container rounded border border-secondary mb-6" id="quiz-area">
         <h3 class="quiz-title p-3" id="question-display"></h3>
@@ -42,6 +44,8 @@
         <div class="row" id="options-group">
 ​
         </div>
+        <hr>
+        <div id="display-RorW"></div>
     </div>
 ​
     <!-- footer -->
@@ -51,17 +55,19 @@
         </div>
     </footer>
 ​
-    <script src="assets/js/questions.js"></script>
-    <script src="assets/js/index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+<script src="assets/js/questions.js"></script>
+<script src="assets/js/index.js"></script>
+    
 </body>
 ​
 </html>
